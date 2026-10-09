@@ -1,0 +1,39 @@
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}" />
+    <EventID>1</EventID>
+    <Version>5</Version>
+    <Level>4</Level>
+    <Task>1</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8000000000000000</Keywords>
+    <TimeCreated SystemTime="2023-10-11T16:15:30.000000000Z" />
+    <EventRecordID>12345</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="456" ThreadID="789" />
+    <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+    <Computer>DESKTOP-EXAMPLE</Computer>
+    <Security UserID="S-1-5-18" />
+  </System>
+  <EventData>
+    <Data Name="RuleName">-</Data>
+    <Data Name="UtcTime">2023-10-11 16:15:30.123</Data>
+    <Data Name="ProcessGuid">{16aef1b2-c2ea-5a19-0000-00104d784500}</Data>
+    <Data Name="ProcessId">5678</Data>
+    <Data Name="Image">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe</Data>
+    <Data Name="FileVersion">10.0.19041.1 (WinBuild.160101.0800)</Data>
+    <Data Name="Description">Windows PowerShell</Data>
+    <Data Name="CommandLine">powershell.exe -NoP -Ep Bypa`s`s -C ^wr`it`e-h`ost 'He`ll`o%Wo`rl`d'</Data>
+    <Data Name="CurrentDirectory">C:\Users\ExampleUser\</Data>
+    <Data Name="User">EXAMPLEDOMAIN\ExampleUser</Data>
+    <Data Name="LogonGuid">{16aef1b2-3c2e-5a19-0000-001004d79500}</Data>
+    <Data Name="LogonId">0x19f453</Data>
+    <Data Name="TerminalSessionId">1</Data>
+    <Data Name="IntegrityLevel">High</Data>
+    <Data Name="Hashes">MD5=35a5d8c6a1e987441758f1815e6ec8f7,SHA256=5b5e6f46e9057690e48c8e579d233572b10ed5045582b520ebcf6e3c33884df9</Data>
+    <Data Name="ParentProcessGuid">{16aef1b2-c2ea-5a19-0000-00104d784501}</Data>
+    <Data Name="ParentProcessId">4321</Data>
+    <Data Name="ParentImage">C:\Windows\explorer.exe</Data>
+    <Data Name="ParentCommandLine">C:\Windows\explorer.exe</Data>
+  </EventData>
+</Event>
